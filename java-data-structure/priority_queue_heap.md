@@ -542,7 +542,7 @@ public class Ex01 {
 
 ## MinHeap class
 
-```
+```java
 public class MinHeap<E extends Comparable> {
     private E[] A;
     private int numItems;
@@ -635,7 +635,7 @@ public class MinHeap<E extends Comparable> {
 
 ## 실습
 
-```
+```java
 public class Ex02 {
     public static void main(String[] args) {
         MinHeap<Integer> h = new MinHeap<>(5);
