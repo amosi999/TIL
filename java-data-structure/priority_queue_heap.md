@@ -2,6 +2,8 @@
 
 Created date: 2024년 2월 2일
 
+<br>
+
 # 01 힙이란
 
 ## 정적 데이터 집합 vs 동적 데이터 집합
@@ -79,6 +81,8 @@ Created date: 2024년 2월 2일
 - 루트로 시작해 가능한 지점까지 모든 노드가 정확히 두 개씩의 자식 노드를 가짐
 - 노드의 수가 맞지 않아 포화 이진 트리를 만들 수 없으면 맨 마지막 레벨은 왼쪽부터 채워나감
 
+<br>
+
 # 힙 (Heap)
 
 - 대표적인 우선순위 큐
@@ -118,6 +122,8 @@ Created date: 2024년 2월 2일
     - buildHeap(): 배열 A[]를 heap으로 만듬
     - isEmpty(): heap이 빈 heap인지 알림
     - clear(): heap을 깨끗이 청소
+
+<br>
 
 # 02 힙 작업 알고리즘
 
@@ -268,6 +274,8 @@ isEmpty():
 clear():
 	n <- 0
 ```
+
+<br>
 
 # 03 힙 구현
 
@@ -527,3 +535,127 @@ public class Ex01 {
 ```
 
 ![Untitled](image/priority_queue_heap_image15.png)
+
+<br>
+
+# 04 최소 힙 구현
+
+## MinHeap class
+
+```
+public class MinHeap<E extends Comparable> {
+    private E[] A;
+    private int numItems;
+
+    public MinHeap(int arraySize) {
+        A = (E[]) new Comparable[arraySize];
+        numItems = 0;
+    }
+    public MinHeap(E[] B, int numElements) {
+        A = B;
+        numItems = numElements;
+    }
+
+    private void percolateUp(int i) {
+        int parent = (i - 1) / 2;
+        if (parent >= 0 && A[i].compareTo(A[parent]) < 0) {
+            // (parent >= 0 && A[i] > A[parent])
+            E tmp = A[i];
+            A[i] = A[parent];
+            A[parent] = tmp;
+            percolateUp(parent);
+        }
+    }
+
+    public void insert(E newItem) throws PQException {
+        if (numItems < A.length) {
+            A[numItems] = newItem;
+            percolateUp(numItems);
+            numItems++;
+        } else throw new PQException("Overflow in insert()");
+    }
+
+    private void percolateDown(int i) {
+        int child = 2 * i + 1;
+        int rightChild = 2 * i + 2;
+        if (child <= numItems - 1) {
+            if (rightChild <= numItems - 1 && A[child].compareTo(A[rightChild]) > 0) {
+                child = rightChild;
+            }
+            if (A[i].compareTo(A[child]) > 0) {
+                E tmp = A[i];
+                A[i] = A[child];
+                A[child] = tmp;
+                percolateDown(child);
+            }
+        }
+    }
+
+    public E deleteMin() throws PQException {
+        if (!isEmpty()) {
+            E min = A[0];
+            A[0] = A[numItems - 1];
+            numItems--;
+            percolateDown(0);
+            return min;
+        } else throw new PQException("HeapErr: DeleteMin()-Underflow");
+    }
+
+    public E min() throws PQException {
+        if (!isEmpty()) {
+            return A[0];
+        } else throw new PQException("HeapErr: Min()-Empty!");
+    }
+
+    public void buildHeap() {
+        if (numItems >= 2) {
+            for (int i = (numItems - 2) / 2; i >= 0; i--) {
+                percolateDown(i);
+            }
+        }
+    }
+
+    public boolean isEmpty() {
+        return numItems == 0;
+    }
+
+    public void clear() {
+        A = (E[]) new Comparable[A.length];
+        numItems = 0;
+    }
+
+    public void heapSort() throws PQException {
+        buildHeap();
+        for (int i = numItems - 1; i >= 1; i--) {
+            A[i] = deleteMin();
+        }
+    }
+}
+```
+
+## 실습
+
+```
+public class Ex02 {
+    public static void main(String[] args) {
+        MinHeap<Integer> h = new MinHeap<>(5);
+        try {
+            h.insert(100);
+            h.insert(10);
+            h.insert(40);
+            h.insert(30);
+            h.insert(5);
+            System.out.printf("%d\n", h.deleteMin());
+            h.insert(50);
+            h.insert(20); // 에러 발생
+            // 여기서부터는 수행하지 못하고 catch로 넘어감
+            h.insert(100);
+            h.insert(25);
+        } catch (PQException e) {
+            System.out.println("HeapException: " + e.getMessage());
+        }
+    }
+}
+```
+
+![Untitled](image/priority_queue_heap_image16.png)
