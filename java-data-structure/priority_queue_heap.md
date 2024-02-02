@@ -335,7 +335,7 @@ public class Heap<E extends Comparable> implements PQInterface<E> {
 
     private void percolateDown(int i) {
         int child = 2 * i + 1;
-        int rightChild = 2 * i / 2;
+        int rightChild = 2 * i + 2;
         if (child <= numItems - 1) {
             if (rightChild <= numItems - 1 && A[child].compareTo(A[rightChild]) < 0) {
                 child = rightChild;
@@ -447,7 +447,7 @@ public class Heap<E extends Comparable> implements PQInterface<E> {
     
         private void percolateDown(int i) {
             int child = 2 * i + 1;
-            int rightChild = 2 * i / 2;
+            int rightChild = 2 * i + 2;
             if (child <= numItems - 1) {
                 if (rightChild <= numItems - 1 && A[child].compareTo(A[rightChild]) < 0) {
                     child = rightChild;
