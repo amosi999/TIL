@@ -12,4 +12,4 @@
 
 ### Java Data Structure
 
-- [Pritority Queue Heap](https://github.com/amosi999/TIL/blob/main/java-data-structure/priority_queue_heap.md)
+- [Priority Queue Heap](https://github.com/amosi999/TIL/blob/main/java-data-structure/priority_queue_heap.md)
