@@ -6,7 +6,15 @@
 
 ### Categories
 
+* [Algorithm](#algorithm)
 * [Java Data Structure](#java-data-structure)
+
+---
+
+### Algorithm
+
+- [Debugging](https://github.com/amosi999/TIL/blob/main/algorithm/debugging.md)
+- [Time Complexity](https://github.com/amosi999/TIL/blob/main/algorithm/time_complexity.md)
 
 ---
 
