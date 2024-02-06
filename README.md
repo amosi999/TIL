@@ -13,6 +13,7 @@
 
 ### Algorithm
 
+- [Array And List](https://github.com/amosi999/TIL/blob/main/algorithm/array_and_list.md)
 - [Debugging](https://github.com/amosi999/TIL/blob/main/algorithm/debugging.md)
 - [Time Complexity](https://github.com/amosi999/TIL/blob/main/algorithm/time_complexity.md)
 
