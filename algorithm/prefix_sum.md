@@ -52,61 +52,6 @@ S[j] - S[i-1]
 
 ## 풀이
 
-### 첫번째 시도: 맞았습니다!!
+위의 내용 참고해서 푸니까 바로 풀림
 
-```java
-import java.io.*;
-import java.util.StringTokenizer;
-
-public class Ex11659_240207 {
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-    int N, M;
-    int[] A;
-    int[] S;
-
-    void run() throws IOException {
-        // input
-        StringTokenizer st1 = new StringTokenizer(br.readLine(), " ");
-        N = Integer.parseInt(st1.nextToken());
-        M = Integer.parseInt(st1.nextToken());
-        A = new int[N];
-        S = new int[N];
-        StringTokenizer st2 = new StringTokenizer(br.readLine(), " ");
-        for (int n = 0; n < N; n++) {
-            A[n] = Integer.parseInt(st2.nextToken());
-            if (n == 0) S[n] = A[n];
-            else S[n] = S[n - 1] + A[n];
-        }
-
-        // process
-        int i, j, result;
-        for (int m = 0; m < M; m++) {
-            StringTokenizer st3 = new StringTokenizer(br.readLine(), " ");
-            i = Integer.parseInt(st3.nextToken()) - 1;
-            j = Integer.parseInt(st3.nextToken()) - 1;
-            if (i == 0) {
-                result = S[j];
-            } else {
-                result = S[j] - S[i - 1];
-            }
-            bw.write(result + "\n");
-        }
-
-        bw.flush();
-        br.close();
-        bw.close();
-    }
-
-    public static void main(String[] args) throws IOException {
-        Ex11659_240207 my = new Ex11659_240207();
-        my.run();
-    }
-}
-```
-
-![Untitled](image/prefix_sum4.png)
-
-## 후기
-
-- 입력 받는 수는 1,000보다 작거나 같은 수이지만 입력받는 개수는 100,000까지도 가능하므로 합 배열 S는 long형으로 만들었다면 더 좋았을듯
+입력 받는 수는 1,000보다 작거나 같은 수이지만 입력받는 개수는 100,000까지도 가능하므로 합 배열 S는 long형으로 만들었다면 더 좋았을듯
