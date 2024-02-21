@@ -44,16 +44,6 @@ sum == N: end_index++; sum = sum + end_index; count++;
 > 
 3. end_index가 N이 되면 종료
 
-### 첫번째 시도: 맞았습니다!!
-
-![Untitled](image/two_pointer_image2.png)
-
-## 후기
-
-- 그냥.. 변수, 배열 초기화랑 투 포인터 이동 원칙만 잘 세우면 거저먹는 문제같은데
-- 아직 쉬운거라 그런가 ㅋㅋ
-- 설 연휴 이후로 여행다니면서 10일정도.. 공부 못하다가 진짜 오랜만에 하는데 그래서 그런지 먼가 재밌음 ㅋ_ㅋ
-
 <br>
 
 # 실전 문제 - 주몽 (1940)
@@ -66,33 +56,4 @@ sum == N: end_index++; sum = sum + end_index; count++;
 
 ## 풀이
 
-### 첫번째 시도: 맞았습니다!!
-
-```java
-start = 0;
-end = N - 1;
-sum = array[start] + array[end];
-count = 0;
-
-while (start < end) {
-	if (sum > M) {
-		end--;
-		sum = array[start] + array[end];
-	} else if (sum < M) {
-		start++;
-		sum = array[start] + array[end];
-	} else {
-		start++;
-		end--;
-		sum = array[start] + array[end];
-		count++;
-	}
-}
-```
-
-![Untitled](image/two_pointer_image4.png)
-
-## 후기
-
-- 포인터 초기 값 바꾸고.. 그거에 맞게 알고리즘도 바꾸고 하니까 쉽게 풀림
-- 재밌당
+포인터 초기 값 바꾸고.. 그거에 맞게 알고리즘도 바꾸고 하니까 쉽게 풀림
