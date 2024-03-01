@@ -157,7 +157,7 @@ Created date: 2024년 2월 28일
 
 ![Untitled](image/ch01/ch01_oop_and_spring_image4.png)
 
-```jsx
+```java
 public class MemberService {
 
 	// 둘 중 하나만 사용
@@ -228,7 +228,7 @@ public class MemberService {
 - 인터페이스를 구현한 새로운 클래스를 하나 만들어 새로운 기능을 구현
 - 지금까지 배운 역할과 구현의 분리를 생각
 
-```jsx
+```java
 public class MemberService {
 
 	// 둘 중 하나만 사용
