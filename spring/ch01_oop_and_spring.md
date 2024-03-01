@@ -97,13 +97,13 @@ Created date: 2024년 2월 28일
 
 ### 운전자 - 자동차
 
-![Untitled](image/oop_and_spring_image1.png)
+![Untitled](image/ch01/ch01_oop_and_spring_image1.png)
 
 - 자동차의 브랜드나 모델이 바뀌어도 자동차 역할만 충분히 구현된다면 운전자는 새로운 면허를 따지 않고 그냥 운전할 수 있음(클라이언트에 영향을 주지 않고 새로운 자동차를 출시할 수 있음)
 
 ### 공연 무대
 
-![Untitled](image/oop_and_spring_image2.png)
+![Untitled](image/ch01/ch01_oop_and_spring_image2.png)
 
 - 배우는 대체가 가능함
 
@@ -138,7 +138,7 @@ Created date: 2024년 2월 28일
 - 클라이언트: 요청, 서버: 응답
 - 수 많은 객체 클라이언트와 객체 서버는 서로 협력 관계를 가짐
 
-![Untitled](image/oop_and_spring_image3.png)
+![Untitled](image/ch01/ch01_oop_and_spring_image3.png)
 
 ### 자바 언어의 다형성
 
@@ -155,7 +155,7 @@ Created date: 2024년 2월 28일
 - 다형성으로 인터페이스를 구현한 객체를 실행 시점에 유연하게 변경 가능
 - 물론 클래스 상속 관계도 다형성, 오버라이딩 적용 가능
 
-![Untitled](image/oop_and_spring_image4.png)
+![Untitled](image/ch01/ch01_oop_and_spring_image4.png)
 
 ```jsx
 public class MemberService {
