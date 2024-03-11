@@ -35,7 +35,7 @@ i에서 j까지의 구간 합을 구하는 공식은 <br>
 S[j] - S[i-1]
 > 
 
-![Untitled](image/prefix_sum1.png)
+![Untitled](image/prefix_sum/prefix_sum1.png)
 
 - 합 배열만 미리 구해 두면 구간 합은 한 번의 계산으로 구할 수 있음
 
@@ -45,9 +45,9 @@ S[j] - S[i-1]
 
 ## 문제
 
-![Untitled](image/prefix_sum2.png)
+![Untitled](image/prefix_sum/prefix_sum2.png)
 
-![Untitled](image/prefix_sum3.png)
+![Untitled](image/prefix_sum/prefix_sum3.png)
 
 [https://www.acmicpc.net/problem/11659](https://www.acmicpc.net/problem/11659)
 
