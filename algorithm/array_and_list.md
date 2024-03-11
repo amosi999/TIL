@@ -57,9 +57,9 @@ Created date: 2024년 2월 6일
 
 ## 문제
 
-![Untitled](image/array_and_list_image1.png)
+![Untitled](image/array_and_list/array_and_list_image1.png)
 
-![Untitled](image/array_and_list_image2.png)
+![Untitled](image/array_and_list/array_and_list_image2.png)
 
 [https://www.acmicpc.net/problem/11720](https://www.acmicpc.net/problem/11720)
 
@@ -87,9 +87,9 @@ N이 100이면 100자리 수인데.. 그럴 경우 int에도 long에도 못담�
 
 ## 문제
 
-![Untitled](image/array_and_list_image4.png)
+![Untitled](image/array_and_list/array_and_list_image4.png)
 
-![Untitled](image/array_and_list_image5.png)
+![Untitled](image/array_and_list/array_and_list_image5.png)
 
 [https://www.acmicpc.net/problem/1546](https://www.acmicpc.net/problem/1546)
 
