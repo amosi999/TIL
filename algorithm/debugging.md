@@ -39,7 +39,7 @@
 
 ## 코딩 테스트를 진행하며 실수하기 쉬운 4가지 오류 찾아보기
 
-![Untitled](image/debugging_image1.png)
+![Untitled](image/debugging/debugging_image1.png)
 
 ### 오류 1. 변수 초기화 오류
 
