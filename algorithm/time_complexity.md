@@ -33,7 +33,7 @@ Created date: 2024년 2월 3일
 
 즉 가장 최악의 경우를 염두에 두고 코드를 짜야 한다는 것
 
-![Untitled](image/time_complexity_image1.png)
+![Untitled](image/time_conplexity/time_complexity_image1.png)
 
 <br>
 
@@ -45,7 +45,7 @@ Created date: 2024년 2월 3일
 
 ### 연습문제 000 수 정렬하기
 
-![Untitled](image/time_complexity_image2.png)
+![Untitled](image/time_conplexity/time_complexity_image2.png)
 
 - 위의 문제에서 가능한 데이터의 개수는 백만개(이정도면 컴퓨터에서는 아주 많지도 적지도 않은 적당한 숫자라고 함)
 - 예제의 경우는 데이터의 개수가 아주 작기 때문에 어떤 알고리즘을 써도 괜찮겠지만 만약 데이터가 백만개가 들어온다면? 백만개가 들어올 경우를 생각해 알고리즘을 선택해야 함
