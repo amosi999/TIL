@@ -16,8 +16,8 @@ Last edited date: 2024년 2월 21일
 
 ## 문제
 
-![Untitled](image/slidng_window_image1.png)
-![Untitled](image/slidng_window_image2.png)
+![Untitled](image/sliding_window/slidng_window_image1.png)
+![Untitled](image/sliding_window/slidng_window_image2.png)
 
 [https://www.acmicpc.net/problem/12891](https://www.acmicpc.net/problem/12891)
 
