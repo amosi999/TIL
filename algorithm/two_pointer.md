@@ -15,7 +15,7 @@ Created date: 2024년 2월 18일
 
 ## 문제
 
-![Untitled](image/two_pointer_image1.png)
+![Untitled](image/two_pointer/two_pointer_image1.png)
 
 [https://www.acmicpc.net/problem/2018](https://www.acmicpc.net/problem/2018)
 
@@ -50,7 +50,7 @@ sum == N: end_index++; sum = sum + end_index; count++;
 
 ## 문제
 
-![Untitled](image/two_pointer_image3.png)
+![Untitled](image/two_pointer/two_pointer_image3.png)
 
 [https://www.acmicpc.net/problem/1940](https://www.acmicpc.net/problem/1940)
 
